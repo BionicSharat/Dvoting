@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@900&display=swap');
+
+body {
+    background-color: #0D1282;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+    overflow-x: hidden;
+
+    background-color: #0d1282;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23f0de36' fill-opacity='0.05' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+    html:root{
+  --toastify-color-progress-dark: #00000000;
+  --toastify-color-dark: #d71313;
+  --toastify-text-color-dark: #F0DE36;
+}
+
+::-moz-selection {
+  color: #000000;
+  background: #5f5816;
+}
+
+::selection {
+  color: #000000;
+  background: #5f5816;
+}
+
+.home {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.circle-button {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+    max-width: fit-content;
+    max-height: max-content;
+    border-radius: 50%;
+    background-color: #F0DE36;
+    color: #d71313;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30vmin;
+    height: 30vmin; 
+    font-size: 4vmin; /* Adjust the font size as needed */
+    transition: box-shadow 0.3s ease-in-out; 
+    box-shadow: 10px 2px 0 rgb(215, 19, 19);
+  }
+
+  .circle-button:hover {
+    box-shadow: 0 0 1px 10px rgba(215, 19, 19, 0.8);
+  }
+
+  .card {
+    border: 5px solid #d71313;
+    box-shadow: 10px 10px 0px 0px rgba(215, 19, 19);
+    background-color: #F0DE36;
+    text-align: center;
+    color: #d71313;
+    text-decoration: underline;
+    width: min-content;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width:40vmin;
+    height: 30vmin; 
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    word-spacing: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .card p {
+    margin: 0; 
+    max-height: 100%; 
+    overflow: hidden; 
+  }
+
+  .homeCandidate {
+  
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardDashboard {
+      border: 5px solid #d71313;
+      background-color: #F0DE36;
+      text-align: center;
+      color: #d71313;
+      width: min-content;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 8px;
+      width: max-content;
+      height: 5vmin; 
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      word-spacing: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .cardDashboard p {
+      font-size: 16px;
+      margin: 0; 
+      max-height: 100%; 
+      overflow: hidden; 
+    }
+
+
+
+  .Candidate {
+    --input-focus: #fffce5;
+    --font-color: #4d0808;
+    --font-color-sub: #d71313;
+    --bg-color: #fffce5;
+    --main-color: #d71313;
+    padding: 20px;
+    background: #F0DE36;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    max-width: 29vmin;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+  }
+
+  .Candidate input {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+  
+  .titleCandidate {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .titleCandidate span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .inputCandidate {
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    min-width: 26vmin;
+    transition: border 0.3s ease;
+
+  }
+  
+  .inputCandidate::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .inputCandidate:focus {
+    border: 2px solid var(--input-focus);
+  }
+
+  .svgBack {
+    cursor: pointer;
+  }
+
+  .button-confirmCandidate {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+
+    margin: 50px auto 0 auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  
+  /* <Candidate data> */
+  .spinner {
+    margin: 29px auto 0 auto;
+    width: 39px;
+    height: 39px;
+    border: 11px #d71313 double;
+    border-left-style: solid;
+    border-radius: 50%;
+    animation: spinner-aib1d7 0.75s infinite linear;
+   }
+   
+   @keyframes spinner-aib1d7 {
+    to {
+     transform: rotate(360deg);
+    }
+   }
+
+   .spinnerDashboard {
+    margin: 0px auto 0 auto;
+    width: 10px;
+    height: 10px;
+    border: 11px #d71313 double;
+    border-left-style: solid;
+    border-radius: 50%;
+    animation: spinner-aib1d7 0.75s infinite linear;
+   }
+   
+   @keyframes spinner-aib1d7 {
+    to {
+     transform: rotate(360deg);
+    }
+   }
+   
+  /* </candidateRegistrations> */
+
+  /* <home button> */
+  .home-button {
+    left: 10%;
+    display: block;
+    width: 60px; 
+    height: 60px; 
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+}
+
+.home-button::before {
+    content: "\2190"; 
+    font-size: 24px;
+    color: white;
+    line-height: 60px; 
+    text-align: center;
+}
+
+  /* </home button> */
+
+  /* <Cards votes> */
+  .homeVotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 95vh;
+    flex-direction: column
+  }
+
+  .titleVotes {
+    color: #ff0000;
+  }
+
+  .titleDiv {
+    gap: 1vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleVotes2 {
+    color: #ff0000;
+    text-align: center;
+  }
+
+  .card2 {
+      border: 4px solid #d71313;
+      box-shadow: 10px 10px 0px 0px rgba(215, 19, 19);
+      background-color: #F0DE36;
+      text-align: center;
+      color: #d71313;
+      width: min-content;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 8px;
+      width: 80vmin;
+      height: 50vmin; 
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      word-spacing: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .cardCandidate {
+    border: 4px solid #d71313;
+    cursor: pointer;
+    padding: 10px;
+    height: 35vmin;
+    width: 24vmin;
+    background: #F0DE36;
+    border-radius: 50px;
+    box-shadow: #d71313 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4em;
+    white-space: normal;
+    color: #d71313;
+    transition: 'filter 0.3s ease-in-out'
+  }
+
+  .text2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+  }
+
+  .cardCandidateTexts {
+    background-color: #e0cf33;
+    border-radius: 15%;
+  }
+
+  .cardsCandidate {
+    
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  /* </Cards votes> */
